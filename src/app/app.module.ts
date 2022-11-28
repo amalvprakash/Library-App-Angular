@@ -13,7 +13,6 @@ import { ViewbooksComponent } from './viewbooks/viewbooks.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { UserLoginComponent } from './user-login/user-login.component';
-import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { HomeComponent } from './home/home.component';
 
 const myRoute:Routes=[
@@ -57,7 +56,6 @@ const myRoute:Routes=[
     ViewbooksComponent,
     NavbarComponent,
     UserLoginComponent,
-    UserNavbarComponent,
     HomeComponent
   ],
   imports: [
