@@ -7,30 +7,30 @@
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Book Name</label>
-                    <input type="text" class="form-control">
+                    <input name="bookName" [(ngModel)]="bookName" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Book Id</label>
-                    <input type="text" class="form-control">
+                    <input name="bookId" [(ngModel)]="bookId" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Book Price</label>
-                    <input type="text" class="form-control">
+                    <input name="bookPrice" [(ngModel)]="bookPrice" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Book Author</label>
-                    <input type="text" class="form-control">
+                    <input name="bookAuthor" [(ngModel)]="bookAuthor" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Date of Entry</label>
-                    <input type="text" class="form-control">
+                    <input name="dateOfEntry" [(ngModel)]="dateOfEntry" type="date" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Book Image</label>
                     <input type="file" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button class="btn btn-primary">Submit</button>
+                    <button (click)="bookEntry()" class="btn btn-primary">Submit</button>
                 </div>
 
             </div>

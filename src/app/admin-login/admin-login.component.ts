@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin-login.component.css']
 })
 export class AdminLoginComponent {
+  userName = ""
+  password = ""
 
+  login = () =>{
+    let data:any = {
+      "username":this.userName,
+      "password":this.password
+    }
+    console.log(data)
+
+    if (this.userName=="admin" && this.password == "12345") {
+      alert("Login Successfull")
+    } else {
+      alert("Invalid Credentials!!")
+    }
+  }
 }
