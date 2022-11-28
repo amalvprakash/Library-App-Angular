@@ -15,5 +15,11 @@ export class AdminLoginComponent {
       "password":this.password
     }
     console.log(data)
+
+    if (this.userName=="admin" && this.password == "12345") {
+      alert("Login Successfull")
+    } else {
+      alert("Invalid Credentials!!")
+    }
   }
 }

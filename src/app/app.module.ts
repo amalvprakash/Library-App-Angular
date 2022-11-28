@@ -41,6 +41,10 @@ const myRoute:Routes=[
     path:"issue",
     component:IssueBookComponent
   },
+  {
+    path:"home",
+    component:HomeComponent
+  }
 ]
 @NgModule({
   declarations: [
