@@ -7,10 +7,10 @@
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Search Book</label>
-                    <input type="text" class="form-control">
+                    <input name="bookId" [(ngModel)]="bookId" type="text" class="form-control">
                 </div>
                 <div>
-                    <button class="btn btn-primary">Delete</button>
+                    <button (click)="delete()" class="btn btn-primary">Delete</button>
                 </div>
             </div>
 

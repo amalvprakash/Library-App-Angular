@@ -11,6 +11,10 @@ import { IssueBookComponent } from './issue-book/issue-book.component';
 import { BookEntryComponent } from './book-entry/book-entry.component';
 import { ViewbooksComponent } from './viewbooks/viewbooks.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
+import { UserLoginComponent } from './user-login/user-login.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { HomeComponent } from './home/home.component';
 
 const myRoute:Routes=[
   {
@@ -18,9 +22,25 @@ const myRoute:Routes=[
     component:AdminLoginComponent
   },
   {
-    path:"list",
+    path:"add",
+    component:BookEntryComponent
+  },
+  {
+    path:"view",
     component:ViewbooksComponent
-  }
+  },
+  {
+    path:"search",
+    component:SearchBookComponent
+  },
+  {
+    path:"delete",
+    component:DeleteBookComponent
+  },
+  {
+    path:"issue",
+    component:IssueBookComponent
+  },
 ]
 @NgModule({
   declarations: [
@@ -31,12 +51,16 @@ const myRoute:Routes=[
     IssueBookComponent,
     BookEntryComponent,
     ViewbooksComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserLoginComponent,
+    UserNavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
